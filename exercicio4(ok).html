@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <div>Questao 4</div>
+        <style> #box {background:yellow;  width:200px;  height:200px;  position:relative;  
+        	} 
+
+        </style>
+</head>
+<body>
+ <div id="box"></div>
+  <script>
+            var box = document.getElementById('box');
+            var posicao = 0;
+            setInterval(function(){
+                if(posicao < 100){
+                    box.style.top  = posicao + 'px';
+                    box.style.left = posicao + 'px';
+                    posicao += 10;
+                    console.log(posicao)
+                }
+            }, 1000);
+        </script>
+
+
+</body>
+</html>>
